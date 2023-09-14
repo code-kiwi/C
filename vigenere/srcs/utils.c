@@ -6,7 +6,7 @@
 /*   By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:04:41 by mhotting          #+#    #+#             */
-/*   Updated: 2023/09/14 22:08:08 by mhotting         ###   ########.fr       */
+/*   Updated: 2023/09/15 00:49:29 by mhotting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,27 @@ char	*ft_strdup(char *str)
 		res[i] = str[i];
 		i++;
 	}
-	str[i] = '\0';
+	res[i] = '\0';
 	return (res);
+}
+
+char	*ft_strcat(char *dest, char *src)
+{
+	unsigned int	i;
+	unsigned int	j;
+
+	if (src == NULL)
+		return (dest);
+	i = 0;
+	while (dest[i])
+		i++;
+	j = 0;
+	while (src[j])
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
