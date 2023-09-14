@@ -6,7 +6,7 @@
 #    By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 16:57:32 by mhotting          #+#    #+#              #
-#    Updated: 2023/09/14 19:06:42 by mhotting         ###   ########.fr        #
+#    Updated: 2023/09/14 22:07:22 by mhotting         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,9 @@ $(NAME): $(OBJ_DIR) $(OBJS)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c $(INCS)
 	$(CC) $(CFLAGS) -c $< -o $@ -I$(INC_DIR)
+
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
 
 clean:
 	rm -f $(OBJS)
