@@ -6,7 +6,7 @@
 /*   By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:06:00 by mhotting          #+#    #+#             */
-/*   Updated: 2023/09/15 00:54:50 by mhotting         ###   ########.fr       */
+/*   Updated: 2023/09/16 03:14:03 by mhotting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,10 @@ void			ft_putstr(char *str);
 unsigned int	ft_strlen(char *str);
 char			*ft_strdup(char *str);
 char			*ft_strcat(char *dest, char *src);
+char			ft_getchar(void);
 
 char			*read_file(char *file_name);
+void			flush_buffer(char buffer[BUFFER_SIZE]);
+int				append_content(char **file_content, char buffer[BUFFER_SIZE]);
 
 #endif

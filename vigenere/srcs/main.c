@@ -6,7 +6,7 @@
 /*   By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 16:53:50 by mhotting          #+#    #+#             */
-/*   Updated: 2023/09/15 00:52:59 by mhotting         ###   ########.fr       */
+/*   Updated: 2023/09/16 03:13:31 by mhotting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,16 @@ int	main(int argc, char **argv)
 {
 	char	*file_content;
 	char	*file_name;
+	char	*key;
+	char	test;
 
-	if (argc != 2)
+	if (argc != 3)
 	{
-		ft_putstr("ERROR - One parameter is expected (valid file name)\n");
+		ft_putstr("ERROR - Two parameters expected: valid file name and key\n");
 		return (1);
 	}
 	file_name = argv[1];
+	key = argv[2];
 	file_content = read_file(file_name);
 	if (file_content == NULL)
 	{
