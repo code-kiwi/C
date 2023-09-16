@@ -6,7 +6,7 @@
 /*   By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 16:53:50 by mhotting          #+#    #+#             */
-/*   Updated: 2023/09/16 03:13:31 by mhotting         ###   ########.fr       */
+/*   Updated: 2023/09/16 03:16:05 by mhotting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ int	main(int argc, char **argv)
 	char	*file_content;
 	char	*file_name;
 	char	*key;
-	char	test;
 
 	if (argc != 3)
 	{
