@@ -6,7 +6,7 @@
 /*   By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 19:04:41 by mhotting          #+#    #+#             */
-/*   Updated: 2023/09/16 03:14:20 by mhotting         ###   ########.fr       */
+/*   Updated: 2023/09/18 15:55:43 by mhotting         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,27 @@ char	ft_getchar(void)
 	res = read_content[0];
 	free(read_content);
 	return (res);
+}
+
+char	is_lower(char c)
+{
+	if (c >= 'a' && c <= 'z')
+		return (1);
+	return (0);
+}
+
+char	is_upper(char c)
+{
+	if (c >= 'A' && c <= 'Z')
+		return (1);
+	return (0);
+}
+
+int	char_index(char c)
+{
+	if (is_lower(c))
+		return (c - 'a');
+	if (is_upper(c))
+		return (c - 'A');
+	return (-1);
 }

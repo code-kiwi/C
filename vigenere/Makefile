@@ -6,7 +6,7 @@
 #    By: mhotting <mhotting@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/14 16:57:32 by mhotting          #+#    #+#              #
-#    Updated: 2023/09/16 00:48:10 by mhotting         ###   ########.fr        #
+#    Updated: 2023/09/18 15:31:31 by mhotting         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ SRC_DIR		=	./srcs/
 SRC_FILES	=	main.c				\
 				utils.c				\
 				utils2.c			\
-				file_management.c
+				file_management.c	\
+				vigenere.c
 SRCS		=	$(addprefix $(SRC_DIR), $(SRC_FILES))
 
 OBJ_DIR		=	./objs/
